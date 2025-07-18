@@ -77,7 +77,7 @@ div.message-imgGp > h3.message-txt {
   font-weight: bold;
   font-size: 20px;
   -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.5px;
   position: relative;
   z-index: 3;
 }
