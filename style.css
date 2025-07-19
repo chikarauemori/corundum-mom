@@ -59,6 +59,11 @@ ul.topMenu li {
     font-size: 150%;
 }
 
+ul.topMenu li a{
+  text-decolation: none;
+  color: #999999;
+}
+
 ol.about-list{
   counter-reset: number;
   list-style-type: none;
