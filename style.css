@@ -40,6 +40,11 @@ img.logo {
   width: 100%;
 }
 
+ul.topMenu{
+  list-style: none;
+  display: inline-block;
+}
+
 ol.about-list{
   counter-reset: number;
   list-style-type: none;
