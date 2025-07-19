@@ -40,12 +40,15 @@ img.logo {
   width: 100%;
 }
 
-ul.topMenu{
-  list-style: none;
+ul.topMenu {
+    list-style: none;
 }
 
-ul.topMenu li{
-  display: inline-block;
+ul.topMenu li {
+    display: inline-block;
+    margin: 5px;
+    background-color: #eebbee;
+    padding: 5px;
 }
 
 ol.about-list{
