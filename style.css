@@ -42,13 +42,21 @@ img.logo {
 
 ul.topMenu {
     list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    z-index: 100;
 }
 
 ul.topMenu li {
     display: inline-block;
-    margin: 5px;
+    margin: 5px 0;
     background-color: #eebbee;
     padding: 5px;
+    font-size: 150%;
 }
 
 ol.about-list{
