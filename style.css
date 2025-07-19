@@ -45,6 +45,10 @@ ul.topMenu{
   display: inline-block;
 }
 
+ul.topMenu li{
+  display: inline-block;
+}
+
 ol.about-list{
   counter-reset: number;
   list-style-type: none;
