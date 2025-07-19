@@ -53,7 +53,7 @@ ul.topMenu {
 
 ul.topMenu li {
     display: inline-block;
-    margin: 5px 0;
+    margin: 5px;
     background-color: #eebbee;
     padding: 5px;
     font-size: 150%;
