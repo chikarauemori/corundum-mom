@@ -40,6 +40,45 @@ img.logo {
   width: 100%;
 }
 
+ol.about-list{
+  counter-reset: number;
+  list-style-type: none;
+  padding: 0.3em 0.8em;
+  border: solid 2px #eebbee;
+}
+
+ol.about-list li{
+  border-bottom: dashed 1px #eebbee;
+  position: relative;
+  padding: 0.5em 0.5em 0.5em 30px;
+  line-height: 1.5em;
+}
+
+ol.about-list li::before{
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  display: inline-block;
+  background-color: #eebbee;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+ol.about-list li:last-of-type{
+  border-bottom: none;
+}
+
 img.about-img {
   max-width: 600px;
   width: 60%;
