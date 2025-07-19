@@ -40,6 +40,10 @@ img.logo {
   width: 100%;
 }
 
+.scroll {
+    scroll-margin-top: 100px;
+}
+
 ul.topMenu {
     list-style: none;
     position: fixed;
