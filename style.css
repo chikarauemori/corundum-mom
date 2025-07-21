@@ -41,48 +41,54 @@ img.logo {
 }
 
 .scroll {
-    scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 750px) {
+  ul.topMenu {
+    display: none !important;
+  }
 }
 
 ul.topMenu {
-    list-style: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f0f0f0;
-    padding: 10px;
-    z-index: 100;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  z-index: 100;
 }
 
 ul.topMenu li {
-    display: inline-block;
-    margin: 5px;
-    background-color: #eebbee;
-    padding: 5px;
-    font-size: 150%;
+  display: inline-block;
+  margin: 5px;
+  background-color: #eebbee;
+  padding: 5px;
+  font-size: 150%;
 }
 
-ul.topMenu li a{
+ul.topMenu li a {
   text-decolation: none;
   color: #999999;
 }
 
-ol.about-list{
+ol.about-list {
   counter-reset: number;
   list-style-type: none;
   padding: 0.3em 0.8em;
   border: solid 2px #eebbee;
 }
 
-ol.about-list li{
+ol.about-list li {
   border-bottom: dashed 1px #eebbee;
   position: relative;
   padding: 0.5em 0.5em 0.5em 30px;
   line-height: 1.5em;
 }
 
-ol.about-list li::before{
+ol.about-list li::before {
   position: absolute;
   counter-increment: number;
   content: counter(number);
@@ -103,7 +109,7 @@ ol.about-list li::before{
   transform: translateY(-50%);
 }
 
-ol.about-list li:last-of-type{
+ol.about-list li:last-of-type {
   border-bottom: none;
 }
 
@@ -143,7 +149,7 @@ div.message-imgGp > h3.message-txt {
   color: #fff;
   font-weight: bold;
   font-size: 20px;
-/*   -webkit-text-stroke-color: black;
+  /*   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 0.5px; */
   position: relative;
   z-index: 3;
