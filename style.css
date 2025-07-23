@@ -324,6 +324,7 @@ div.lineTk-txt::after {
 div.lineTk-txt p {
   margin: 0;
   padding: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 div.lineTk-right {
@@ -341,6 +342,7 @@ div.lineTk-right p {
   background: #30e852;
   font-size: 15px;
   margin-right: 19px; /* 三角分スペース */
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 div.lineTk-right p::after {
