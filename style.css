@@ -221,7 +221,8 @@ div.service-content {
 }
 
 div.service {
-  background-image: url("./images/service.jpg");
+  background-image: url("./images/service.png");
+  background-size: cover;
 }
 
 div.member-img {
@@ -324,7 +325,6 @@ div.lineTk-txt::after {
 div.lineTk-txt p {
   margin: 0;
   padding: 0;
-  font-size: 16px;
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
