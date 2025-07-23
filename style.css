@@ -34,10 +34,9 @@ li {
 
 div {
   font-size: clamp(0.75rem, calc(100vw / 48), 1.4rem);
-  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-.accordion-label{
+.accordion-label {
   font-size: clamp(0.75rem, calc(100vw / 48), 1.4rem);
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
@@ -166,7 +165,7 @@ div.message-imgGp > h3.message-txt {
 }
 
 span.message-txt-02 {
-  color: red;
+  color: #eebbee;
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 1px;
   font-size: 30px;
@@ -194,6 +193,7 @@ div.service {
   width: 100%;
   aspect-ratio: 1 / 1;
   border: 3px solid;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 div.service2 {
@@ -340,7 +340,7 @@ div.lineTk-right p {
   max-width: 250px;
   border-radius: 12px;
   background: #30e852;
-  font-size: 15px;
+  font-size: 16px;
   margin-right: 19px; /* 三角分スペース */
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
