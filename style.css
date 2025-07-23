@@ -32,6 +32,16 @@ li {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
+div {
+  font-size: clamp(0.75rem, calc(100vw / 48), 1.4rem);
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.accordion-label{
+  font-size: clamp(0.75rem, calc(100vw / 48), 1.4rem);
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
 p {
   font-size: clamp(1rem, calc(100vw / 48), 2rem);
 }
