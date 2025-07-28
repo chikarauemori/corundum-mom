@@ -325,6 +325,15 @@ ul.ballon2 li{
   }
 }
 
+ul.ballonSP {
+  position: relative;
+  margin: 10px 50px;
+  padding: 30px;
+  background-color: #eebbee;
+  border-radius: 30px;
+  width: 50%;
+  }
+
 img.member-line{
   width: 100%;
   margin: 10px 0;
