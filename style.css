@@ -319,6 +319,12 @@ ul.ballon2 li{
   list-style: none;
 }
 
+@media (max-width: 750px) {
+  ul.ballon, ul.ballon2{
+    display: none !important;
+  }
+}
+
 img.member-line{
   width: 100%;
   margin: 10px 0;
