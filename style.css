@@ -268,7 +268,7 @@ ul.ballon:after {
   border-radius: 50%;
 }
 
-ul.ballon li{
+ul.ballon li {
   list-style: none;
 }
 
@@ -315,12 +315,13 @@ ul.ballon2:after {
   border-radius: 50%;
 }
 
-ul.ballon2 li{
+ul.ballon2 li {
   list-style: none;
 }
 
 @media (max-width: 750px) {
-  ul.ballon, ul.ballon2{
+  ul.ballon,
+  ul.ballon2 {
     display: none !important;
   }
 }
@@ -332,13 +333,13 @@ ul.ballonSP {
   background-color: #eebbee;
   border-radius: 30px;
   width: 60%;
-  }
-  
-  ul.ballonSP li {
-   list-style: none;
-  }
+}
 
-img.member-line{
+ul.ballonSP li {
+  list-style: none;
+}
+
+img.member-line {
   width: 100%;
   margin: 10px 0;
 }
@@ -503,4 +504,24 @@ footer h3 {
 span.footer-title {
   color: #fff;
   font-size: 150%;
+}
+
+a.pageTop {
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  background-color: #eebbee;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  line-height: 100px;
+  font-weight: bold;
+  color: #000;
+
+  position: fixed;
+  bottom: 1.4%;
+  right: 1.4%;
+  z-index: 999;
 }
