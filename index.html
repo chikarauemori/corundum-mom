@@ -20,7 +20,9 @@ crossorigin="anonymous"
   <body>
     <header>
       <nav>
-        <ul class="topMenu">
+        
+        <ul class="topMenu" id="topMenu">
+          <a href="#" id="footerBtn"><img src="./images/topLogo.png" alt="" class="topMenu__logo"></a>
           <li><a href="#about">About</a></li>
           <li><a href="#message">Message</a></li>
           <li><a href="#service">Service</a></li>
@@ -30,12 +32,12 @@ crossorigin="anonymous"
         </ul>
       </nav>
     </header>
-    <div class="firstView">
+    <div class="firstView" id="firstView">
       <img src="./images/logo.png" alt="" class="logo">
     </div>
     <main>
       <div class="about scroll" id="about">
-        <h2 class="about-title">　CORUNDUM MAMA<br>とは？</h2>
+        <h2 class="about-title">CORUNDUM MAMA<br>とは？</h2>
         <ol class="about-list">
           <li>女性の中でも、特にママをサポートすることに特化した女性支援コミュニティ</li>
           <li>CORUNDUM LADYの姉妹コミュニティ</li>
@@ -289,6 +291,33 @@ crossorigin="anonymous"
     </footer>
 
     <script>
+
+      //footerBtn
+      const footerBtn = document.getElementById('footerBtn')
+      footerBtn.addEventListener('click' , function(event) {
+        event.preventDefault(); // ← href="#"のデフォルト動作を防ぐ
+        window.scroll({
+        top: 0,
+        behavior: "smooth"
+        });
+      });
+
+
+      //topMenu
+
+      const tooMenu = document.getElementById('topMenu');
+      const firstView = document.getElementById('firstView');
+
+      document.addEventListener('scroll' , function() {
+        if(firstView.getBoundingClientRect().bottom <= 100){
+          topMenu.classList.add('active');
+        } else {
+          topMenu.classList.remove('active');
+        }
+      });
+
+
+      //サービス詳細
         const main = document.getElementById('main');
         const contents = document.querySelectorAll('.service-content');
         console.log(contents);
@@ -303,6 +332,7 @@ crossorigin="anonymous"
             });
         });
 
+        //topボタン
         const topBtn = document.getElementById('pageTop')
         topBtn.addEventListener("click", function(event) {
         event.preventDefault(); // ← href="#"のデフォルト動作を防ぐ
