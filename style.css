@@ -50,7 +50,7 @@ img.logo {
 }
 
 .scroll {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 110px;
 }
 
 @media (max-width: 750px) {
@@ -63,24 +63,39 @@ ul.topMenu {
   list-style: none;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 10px;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #eebbee;
   padding: 10px;
   z-index: 100;
+
+  transform: translateY(-120%);
+  transition: 0.2s;
+}
+
+ul.topMenu.active {
+  transform: none;
+}
+
+img.topMenu__logo {
+  height: 30px;
+  background-color: #fff;
+  padding: 10px;
+  line-height: 30px;
 }
 
 ul.topMenu li {
   display: inline-block;
   margin: 5px;
-  background-color: #eebbee;
+
   padding: 5px;
   font-size: 150%;
 }
 
 ul.topMenu li a {
   text-decoration: none;
-  color: #999999;
+  color: rgba(153, 153, 153, 0.7);
+  font-weight: bold;
 }
 
 ol.about-list {
