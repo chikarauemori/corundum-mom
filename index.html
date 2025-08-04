@@ -31,6 +31,24 @@ crossorigin="anonymous"
           <li><a href="#faq">F&Q</a></li>
         </ul>
       </nav>
+
+      <div class="headerSp">
+        <nav class="headerSp__nav">
+          <ul class="headerSp__items" id="headerSp__items">
+            <li><a href="#about" class="headerSp__list" >About</a></li>
+            <li><a href="#message" class="headerSp__list" >Message</a></li>
+            <li><a href="#service" class="headerSp__list" >Service</a></li>
+            <li><a href="#member" class="headerSp__list" >Member</a></li>
+            <li><a href="#voice" class="headerSp__list" >Voice</a></li>
+            <li><a href="#faq" class="headerSp__list" >F&Q</a></li>
+          </ul>
+        </nav>
+
+        <div id="hamburger" class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
     </header>
     <div class="firstView" id="firstView">
       <img src="./images/logo.png" alt="" class="logo">
@@ -55,7 +73,7 @@ crossorigin="anonymous"
                     私たちは、<br />１人の女性であり、<br />１人の母親であり、<br />そもそも１人の人間です。
                 </p>
                 <p>
-                    私たちには、<br><span class="message-txt-02">女性</span>として、<span class="message-txt-02">母親</span>として、<span class="message-txt-02">妻</span>として、<br>そして<span class="message-txt-02">人間</span>として、<br><span class="message-txt-01">幸せになるチャンス</span>があるはずです。
+                    私たちには、<br><span class="message-txt-02">女性</span>として、<span class="message-txt-02">母親</span>として、<span class="message-txt-02">妻</span>として、<br>そして<span class="message-txt-02">人間</span>として、<br><span class="message-txt-01">幸せになるチャンス</span><br>があるはずです。
                 </p>
                 <p>
                     CORUNDUM MAMAでは、<br><span class="message-txt-02">女性としての喜び</span>だけでなく、<span class="message-txt-02">ママとしての喜び</span>を感じられる、
@@ -69,6 +87,7 @@ crossorigin="anonymous"
       </div>
 
       <h2 class="service-title scroll" id="service">サービス内容</h2>
+      <h3 class="service__tap">気になるサービスを<br>タップ！！</h3>
       <div class="service">
         <div class="service-content no1" id="content-01">オンライン<br>ママ会</div>
         <div class="service-content no2" id="content-02">オンライン<br>読み聞かせ会</div>
@@ -84,7 +103,15 @@ crossorigin="anonymous"
         <div class="service-content no8" id="content-08">撮影会</div>
         <div class="service-content no9" id="content-09">ワークショップや<br>女子会</div>
       </div>
+
       
+
+      <div class="arrow">
+      <span class="dli-chevron-down"></span><br>
+      <span class="dli-chevron-down"></span><br>
+      <span class="dli-chevron-down"></span>
+      </div>
+
       <h2 class="service2-title">《サービス詳細》</h2>
       <div class="service2">
         <img src="" alt="" id="main">
@@ -96,7 +123,9 @@ crossorigin="anonymous"
       <h3>
         <li>名前： ゆず🐈‍⬛🐗🦦🐹</li>
         <li>都道府県： 茨城県</li>
-        <li>プロフィール：３姉妹の母</li>
+        <li>プロフィール：３姉妹の母</li><br>
+        <li>SNSリンク： <a href="https://x.com/corundummama?s=21&t=0uHsLb6BTSfrCHQtyhIJwg
+          " class="snsIcon" target="__blank"><i class="fa-brands fa-x-twitter"></i> @ CorundumMama</a></li>
       </h3>
       <div class="member-img">
         
@@ -127,7 +156,8 @@ crossorigin="anonymous"
       <h3>
         <li>名前： 萌しゃん</li>
         <li>都道府県： 東京都</li>
-        <li>プロフィール：育児コンサルタント/  二児の母</li>
+        <li>プロフィール：育児コンサルタント/  二児の母</li><br>
+        <li>SNSリンク： <a href="https://www.amazon.co.jp/dp/4866287535" class="snsIcon" target="_blank"><i class="fa-brands fa-amazon snsIcon"></i> 育児本<br>『イヤイヤ期は１日３回までです』</a></li>
       </h3>
 
       <div class="member-img2">
@@ -289,6 +319,34 @@ crossorigin="anonymous"
       </div>
 
     </footer>
+
+    <script>
+      const menu = document.getElementById("headerSp__items");
+      const btn = document.getElementById("hamburger");
+      const scrollCl = document.querySelectorAll('.scroll');
+      console.log(scrollCl);
+
+      btn.addEventListener("click", function () {
+        btn.classList.toggle("open");
+        menu.classList.toggle("open");
+        for (let s = 0; s < scrollCl.length; s++){
+          scrollCl[s].classList.remove('scroll');
+        }
+      });
+
+      const linkSp = document.querySelectorAll('.headerSp__list');
+      console.log(linkSp.length);
+      
+
+      for(let i = 0 ; i<linkSp.length; i++){
+        linkSp[i].addEventListener('click' , function(){
+          btn.classList.remove('open');
+          menu.classList.remove('open');
+        })
+      }      
+
+      
+    </script>
 
     <script>
 
